@@ -11,10 +11,10 @@ This project demonstrates how to set up and run human detection using the YOLO (
 
 
 Install Dependencies
-1. ```sh
-sudo apt-get update
+1. ```sh sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python3-pip python3-venv
+
 pip3 install numpy opencv-python
 
 Step 2: Set Up Virtual Environment (Recommended)
