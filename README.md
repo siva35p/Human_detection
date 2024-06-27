@@ -47,4 +47,4 @@ Webcam Connection: Ensure your webcam is properly connected and recognized by th
 File Paths: Verify that the paths to the YOLO weights, config, and COCO names files are correct in the script.
 Dependencies: Ensure all required dependencies are installed in your virtual environment.
 
-By following these steps, you should be able to set up and run human detection using the YOLO model on a Linux system successfully. If you encounter any issues, please provide specific error messages for more targeted assistance.
+By following these steps, you should be able to set up and run human detection using the YOLO model on a Linux system successfully.
