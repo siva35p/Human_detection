@@ -7,14 +7,14 @@ This project demonstrates how to set up and run human detection using the YOLO (
 - Python 3.x
 - pip
 
-## Installation
+Installation
 
+Step 1: Install Dependencies
 
-Install Dependencies
-1. ```sh sudo apt-get update
+```sh
+sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python3-pip python3-venv
-
 pip3 install numpy opencv-python
 
 Step 2: Set Up Virtual Environment (Recommended)
@@ -31,13 +31,20 @@ sh
 wget https://pjreddie.com/media/files/yolov3.weights
 wget https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
 wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
+Usage
 
 Step 5: Create Python Script
-Create a file named human_detection.py with the content given in repository
+Create a file named human_detection.py with the following content:
 
-Troubleshooting
+Step 6: Run the Script
+Ensure your virtual environment is activated, then run the script:
+sh
+source yolov3-env/bin/activate
+python human_detection.py
+
+Troubleshooting:
 Webcam Connection: Ensure your webcam is properly connected and recognized by the system.
 File Paths: Verify that the paths to the YOLO weights, config, and COCO names files are correct in the script.
 Dependencies: Ensure all required dependencies are installed in your virtual environment.
 
-By following these steps, you should be able to set up and run human detection using the YOLO model on a Linux system successfully. If you encounter any issues, please report
+By following these steps, you should be able to set up and run human detection using the YOLO model on a Linux system successfully. If you encounter any issues, please provide specific error messages for more targeted assistance.
