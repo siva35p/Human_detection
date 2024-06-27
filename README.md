@@ -9,8 +9,8 @@ This project demonstrates how to set up and run human detection using the YOLO (
 
 ## Installation
 
-Install Dependencies
 
+Install Dependencies
 ```sh
 sudo apt-get update
 sudo apt-get upgrade
