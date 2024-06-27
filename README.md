@@ -7,8 +7,8 @@ This project demonstrates how to set up and run human detection using the YOLO (
 - Python 3.x
 - pip
 
-Installation
-
+## Installation
+### steps
 Step 1: Install Dependencies
 
 ```sh
