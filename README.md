@@ -11,7 +11,7 @@ This project demonstrates how to set up and run human detection using the YOLO (
 
 
 Install Dependencies
-```sh
+1. ```sh
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get install python3-pip python3-venv
