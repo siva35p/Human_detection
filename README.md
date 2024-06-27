@@ -19,18 +19,15 @@ pip3 install numpy opencv-python
 
 Step 2: Set Up Virtual Environment (Recommended)
 sh
-Copy code
 python3 -m venv yolov3-env
 source yolov3-env/bin/activate
 
 Step 3: Install Python Packages
 sh
-Copy code
 pip install numpy opencv-python
 
 Step 4: Download YOLOv3 Files
 sh
-Copy code
 wget https://pjreddie.com/media/files/yolov3.weights
 wget https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
 wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
