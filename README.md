@@ -1,50 +1,33 @@
-# Human Detection Using YOLO Model on Linux
+This is a project on how to setup and run human detection using the YOLO(You Only Look Once) model on linux. The model deployed over here is a YOLO model to detect humans in real-time from the web-cam. 
 
-This project demonstrates how to set up and run human detection using the YOLO (You Only Look Once) model on a Linux system. The YOLO model is used to detect humans in real-time via a webcam.
+Prerequisites 
+Python 3.x 
+pip 
 
-## Prerequisites
+Installation 
+steps 
 
-- Python 3.x
-- pip
+Step 1: Install Dependencies 
+sudo apt-get update 
+sudo apt-get upgrade 
+sudo yum install python3-pip python3-venv 
 
-## Installation
-### steps
-Step 1: Install Dependencies
+On non-archlinux based systems, you can install the required dependencies using: 
 
-```sh
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install python3-pip python3-venv
-pip3 install numpy opencv-python
+In the second Step: Set Environment // Highly recommended to set Virtual environment 
+sh 
+python3 -m venv yolov3-env 
+yolov3-env/bin/activate 
 
-Step 2: Set Up Virtual Environment (Recommended)
-sh
-python3 -m venv yolov3-env
-source yolov3-env/bin/activate
+Before running the code import following python packages like 
+sh 
+pip install numpy opencv-python 
 
-Step 3: Install Python Packages
-sh
-pip install numpy opencv-python
+Step 4: Download YOLOv3 Files 
+sh 
+wget https://pjreddie.com/media/files/yolov3.weights 
+wget https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg 
+wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names 
 
-Step 4: Download YOLOv3 Files
-sh
-wget https://pjreddie.com/media/files/yolov3.weights
-wget https://raw.githubusercontent.com/pjreddie/darknet/master/cfg/yolov3.cfg
-wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/coco.names
-Usage
-
-Step 5: Create Python Script
-Create a file named human_detection.py with the following content:
-
-Step 6: Run the Script
-Ensure your virtual environment is activated, then run the script:
-sh
-source yolov3-env/bin/activate
-python human_detection.py
-
-Troubleshooting:
-Webcam Connection: Ensure your webcam is properly connected and recognized by the system.
-File Paths: Verify that the paths to the YOLO weights, config, and COCO names files are correct in the script.
-Dependencies: Ensure all required dependencies are installed in your virtual environment.
-
-By following these steps, you should be able to set up and run human detection using the YOLO model on a Linux system successfully.
+Usage 
+Step 5: Create Python Script 
